@@ -1,6 +1,6 @@
 # COMP2139-W2018-Lesson8
 
-## GitHub Demo and DB Demo
+## this is Max
 
 This is an example README.md file
 
