@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="COMP2139___W2018___Lesson_8.Default" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <!-- CSS Section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a ID="Brand" runat="server" class="navbar-brand" href="~/">My Web App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+       
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a ID="Home" runat="server" class="nav-link" href="~/"><i class="fa fa-2x fa-home"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a ID="Products" runat="server" class="nav-link" href="~/Products.aspx"><i class="fa fa-2x fa-th-large"></i> Products</a>
+      </li>
+        <li class="nav-item">
+        <a ID="Services" runat="server" class="nav-link" href="~/Services.aspx"><i class="fa fa-2x fa-globe"></i> Services</a>
+      </li>
+        <li class="nav-item">
+        <a ID="About" runat="server" class="nav-link" href="~/About.aspx"><i class="fa fa-2x fa-info-circle"></i> About</a>
+      </li>
+        <li class="nav-item">
+        <a ID="Contact" runat="server" class="nav-link" href="~/Contact.aspx"><i class="fa fa-2x fa-mobile"></i> Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- this is where all content pages are injected -->
+    <form id="PageForm" runat="server">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+         <h4 ID="Copyright" runat="server" class="navbar-text">&copy; Copyright 2018</h4>
+    </nav>
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
